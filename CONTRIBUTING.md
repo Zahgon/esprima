@@ -7,7 +7,9 @@ Please do **not** create a pull request without reading this guide first. Failur
 **1. Create a ticket in the [issue tracker](https://github.com/jquery/esprima/issues)**.
 This serves as a placeholder for important feedback, review, or any future updates.
 
-**2. Run all the tests**. This requires Node.js: `npm install` to set up, `npm test` to run the tests.
+**2. Run all the tests**. This requires Go 1.23 or later: `go vet ./...` and `go test ./...` run the
+fixture suite under `test/fixtures`, the third-party library baselines under `test/3rdparty` and the API tests.
+Format the code with `gofmt`.
 
 **3. Work on a feature branch**.  If the change still needs some tweaks, it will not clutter the master branch.
 
@@ -18,4 +20,3 @@ This serves as a placeholder for important feedback, review, or any future updat
 
 
 For more information, please check the [detailed contribution guide](http://esprima.org/doc/index.html#contribution).
-
